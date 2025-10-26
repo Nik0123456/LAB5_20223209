@@ -2,6 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permisos para notificaciones (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    
+    <!-- Permisos para acceder a imágenes -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    
+    <!-- Permiso para alarmas exactas (notificaciones programadas) -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +23,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.L5_20223209">
+        
+        <!-- MainActivity - Pantalla principal -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -20,6 +34,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <!-- CoursesListActivity - Lista de cursos -->
+        <activity
+            android:name=".activities.CoursesListActivity"
+            android:exported="false" />
+        
+        <!-- CreateCourseActivity - Formulario de creación -->
+        <activity
+            android:name=".activities.CreateCourseActivity"
+            android:exported="false" />
+        
+        <!-- SettingsActivity - Configuraciones -->
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:exported="false" />
+        
+        <!-- WorkManager Workers -->
+        <receiver
+            android:name=".workers.CourseNotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        
+        <receiver
+            android:name=".workers.MotivationalNotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        
     </application>
 
 </manifest>

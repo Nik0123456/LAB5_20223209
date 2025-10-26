@@ -1,3 +1,89 @@
 <resources>
-    <string name="app_name">L5_20223209</string>
+    <string name="app_name">Gestor de Estudio</string>
+    
+    <!-- Main Activity -->
+    <string name="profile_image">Imagen de perfil</string>
+    <string name="greeting_placeholder">¡Hola, Usuario!</string>
+    <string name="motivational_message_placeholder">Hoy es un gran día para aprender</string>
+    <string name="view_my_courses">Ver mis cursos</string>
+    <string name="settings">Configuraciones</string>
+    <string name="total_courses">Cursos totales</string>
+    <string name="next_session">Próxima sesión</string>
+    
+    <!-- Courses List Activity -->
+    <string name="my_courses">Mis Cursos</string>
+    <string name="add_course">Agregar Curso</string>
+    <string name="no_courses_yet">No hay cursos registrados aún</string>
+    <string name="add_first_course">Presiona el botón + para agregar tu primer curso</string>
+    <string name="delete_course">Eliminar curso</string>
+    <string name="delete_course_title">¿Eliminar curso?</string>
+    <string name="delete_course_message">¿Estás seguro de que deseas eliminar este curso? Esta acción no se puede deshacer.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    
+    <!-- Create Course Activity -->
+    <string name="add_new_course">Agregar Nuevo Curso</string>
+    <string name="course_name">Nombre del curso</string>
+    <string name="course_category">Categoría</string>
+    <string name="study_frequency">Frecuencia de estudio</string>
+    <string name="frequency_value">Cada</string>
+    <string name="frequency_unit">Unidad</string>
+    <string name="next_session_schedule">Próxima sesión planificada</string>
+    <string name="date">Fecha</string>
+    <string name="time">Hora</string>
+    <string name="save_course">Guardar Curso</string>
+    
+    <!-- Categories -->
+    <string name="category_teoricos">Teóricos</string>
+    <string name="category_laboratorios">Laboratorios</string>
+    <string name="category_electivos">Electivos</string>
+    <string name="category_otros">Otros</string>
+    
+    <!-- Frequency Units -->
+    <string name="unit_hours">horas</string>
+    <string name="unit_days">días</string>
+    
+    <!-- Settings Activity -->
+    <string name="profile_section">Perfil</string>
+    <string name="your_name">Tu nombre</string>
+    <string name="motivational_section">Mensajes Motivacionales</string>
+    <string name="motivational_message">Mensaje motivacional</string>
+    <string name="message_frequency_hours">Frecuencia (en horas)</string>
+    <string name="message_frequency_helper">Cada cuántas horas deseas recibir un mensaje motivacional</string>
+    <string name="save_settings">Guardar Configuración</string>
+    <string name="settings_info">Los cambios se guardarán automáticamente y se aplicarán inmediatamente. Los mensajes motivacionales se programarán según la frecuencia indicada.</string>
+    
+    <!-- Validation Messages -->
+    <string name="error_empty_field">Este campo no puede estar vacío</string>
+    <string name="error_invalid_number">Ingresa un número válido</string>
+    <string name="success_course_saved">Curso guardado correctamente</string>
+    <string name="success_course_deleted">Curso eliminado</string>
+    <string name="success_settings_saved">Configuración guardada</string>
+    <string name="error_select_category">Selecciona una categoría</string>
+    <string name="error_select_frequency_unit">Selecciona una unidad de frecuencia</string>
+    <string name="error_select_date">Selecciona una fecha</string>
+    <string name="error_select_time">Selecciona una hora</string>
+    
+    <!-- Notifications -->
+    <string name="notification_permission_required">Se requiere permiso para enviar notificaciones</string>
+    
+    <!-- Time Formatting -->
+    <string name="today">Hoy</string>
+    <string name="tomorrow">Mañana</string>
+    <string name="in_days">En %d días</string>
+    <string name="at_time">a las %s</string>
+    <string name="every_x_hours">Cada %d horas</string>
+    <string name="every_x_days">Cada %d días</string>
+    
+    <string-array name="categories">
+        <item>Teóricos</item>
+        <item>Laboratorios</item>
+        <item>Electivos</item>
+        <item>Otros</item>
+    </string-array>
+    
+    <string-array name="frequency_units">
+        <item>horas</item>
+        <item>días</item>
+    </string-array>
 </resources>
